@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta name="description" content="Los datos de mi cuenta en WebTienda">
+  <meta name="keywords" content="CUENTA, MIS DATOS, INFORMACION, HISTORIAL, MODIFICAR">
+  <link rel="stylesheet" href="estilos/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <title>Mi cuenta</title>
+</head>
+
+<body>
+  <div id="grid-miCuenta">
+    <header id="header1">
+      <img src="images/logo.png" alt="logo" />
+      <form action="#">
+        <input type="button" value="Buscar" id="btnBuscar" />
+        <input type="text" name="buscador" id="rectangulo" />
+      </form>
+      <nav id="navegador1">
+        <ul id="ul1">
+          <a href="index.html">Inicio</a>
+          <a href="carro.html">Carro</a>
+          <a href="Micuenta.html">Mi cuenta
+            <ul>
+              <li>Iniciar sesión</li>
+            </ul>
+          </a>
+          <a href="registrarse.html">Registrarse</a>
+          <a href="contacto.html">Contacto</a>
+        </ul>
+      </nav>
+    </header>
+    <section id="misDatos" class="form">
+      <!--id="misDatos"-->
+      <h1>Mis datos</h1>
+      <div class="border">
+        <h4>Datos de cuenta</h4>
+        <div class="datos">Usuario</div>
+        <div class="datos">E-Mail</div>
+        <div><a href="#">Modificar</a></div>
+      </div>
+      <div class="border">
+        <h4>Datos personales</h4>
+        <div class="datos">Nombre y apellido</div>
+        <div class="datos">Teléfono</div>
+        <div class="datos">DNI</div>
+        <div class="datos">Dirección</div>
+        <div><a href="#">Modificar</a></div>
+      </div>
+      <div class="border">
+        <h4>Tarjetas</h4>
+        <div class="datos">Tarjeta 1</div>
+        <div class="datos">Tarjeta 2</div>
+        <div><a href="#">Modificar</a></div>
+      </div>
+      <div>
+        <div><a href="#" class="btnCancelar">Cancelar</a></div>
+      </div>
+    </section>
+    <footer id="footer1">
+      <section id="footer2">
+        <span>Nos encuentras en nuestras redes sociales:</span>
+        <span>Facebook | Instagram | Twitter</span>
+        <span>Desarrollado por: <a href="#">Nicolas Bauchi</a></span>
+      </section>
+    </footer>
+  </div>
+</body>
+
+</html>
