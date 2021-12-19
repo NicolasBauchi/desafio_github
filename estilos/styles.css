@@ -1,53 +1,47 @@
-* /*Reseteo de CSS */ {
+* {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
+
 body {
-  background: linear-gradient(to bottom, rgb(253, 196, 89), rgb(255, 239, 209));
-}
+  background: linear-gradient(to bottom, #fdc459, #ffefd1); }
+
 .border {
-  border: 1px solid black;
-}
+  border: 1px solid black; }
+
 /*---------------------*/
 /*COMIENZO SECCION INDEX + DEFAULTS*/
 #grid-home {
   display: grid;
-  grid-template-areas:
-    "header header header"
-    "slider slider slider"
-    "tablero tablero tablero"
-    "otros otros otros"
-    "footer footer footer";
+  grid-template-areas: "header header header" "slider slider slider" "tablero tablero tablero" "otros otros otros" "footer footer footer";
   grid-template-columns: 20% 60% 20%;
   grid-template-rows: 60px 400px 800px 600px 60px;
   grid-row-gap: 0px;
   grid-column-gap: 0px;
-  height: auto;
-}
+  height: auto; }
+
 header {
   grid-area: header;
   background-color: crimson;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-}
+  align-items: center; }
+
 header img {
   width: 100px;
   height: 58px;
-  margin-left: 30px;
-}
+  margin-left: 30px; }
 
 nav {
   grid-area: nav;
   justify-content: flex-end;
   margin-right: 10px;
-  margin-top: 5px;
-}
+  margin-top: 5px; }
+
 nav ul ul {
   display: none;
-  position: absolute;
-}
+  position: absolute; }
+
 #ul1 a {
   text-decoration: none;
   margin-right: 5px;
@@ -56,18 +50,18 @@ nav ul ul {
   background-color: transparent;
   font-weight: bold;
   font-size: 24px;
-  color: rgb(255, 239, 209);
-}
+  color: #ffefd1; }
+
 nav ul ul li {
   display: block;
   background-color: crimson;
-  border-radius: 2px;
-}
+  border-radius: 2px; }
+
 nav ul ul li:hover {
-  background-color: rgb(255, 239, 209);
+  background-color: #ffefd1;
   color: crimson;
-  border-radius: 2px;
-}
+  border-radius: 2px; }
+
 nav ul a:hover ul {
   display: block;
   margin-left: 130px;
@@ -76,15 +70,14 @@ nav ul a:hover ul {
   text-align: center;
   font-size: 20px;
   border: 1px solid crimson;
-  border-radius: 2px;
-}
+  border-radius: 2px; }
+
 #btnBuscar {
-  padding: 5px;
-}
+  padding: 5px; }
+
 #rectangulo {
   padding: 5px;
-  width: 300px;
-}
+  width: 300px; }
 
 #footer1 {
   grid-area: footer;
@@ -95,116 +88,105 @@ nav ul a:hover ul {
   justify-content: center;
   align-items: center;
   font-family: Georgia, "Times New Roman", Times, serif;
-  height: 60px;
-}
+  height: 60px; }
+
 #footer2 span {
-  margin: 2px 5px 1px 15px;
-}
+  margin: 2px 5px 1px 15px; }
+
 #footer2 a {
-  text-decoration: none;
-}
+  text-decoration: none; }
+
 #tablero {
   grid-area: tablero;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: center;
-}
+  align-items: center; }
+
 #tablero div {
-  margin: 5px 5px 0px 5px;
-}
+  margin: 5px 5px 0px 5px; }
+
 #tablero div div div {
   display: grid;
-  grid-template-areas:
-    "itemName"
-    "descrip"
-    "itemPrice"
-    "btnCompra";
+  grid-template-areas: "itemName" "descrip" "itemPrice" "btnCompra";
   grid-row-gap: 0px;
   height: 100vh;
-  grid-template-rows: 60px 60px 60px 30px;
-}
+  grid-template-rows: 60px 60px 60px 30px; }
+
 #itemName {
-  grid-area: itemName;
-}
+  grid-area: itemName; }
+
 #descrip {
-  grid-area: descrip;
-}
+  grid-area: descrip; }
+
 #itemPrice {
   grid-area: itemPrice;
-  text-align: start;
-}
+  text-align: start; }
+
 #btnCompra {
   grid-area: btnCompra;
-  border: 1px solid crimson;
-}
+  border: 1px solid crimson; }
+
 #tablero div div img {
-  height: 90px;
-}
+  height: 90px; }
+
 #tablero div div div a {
-  background-color: crimson;
-}
+  background-color: crimson; }
+
 #primeraFila {
   display: flex;
   flex-direction: row;
   height: 350px;
-  margin: 15px 0px 10px 0px;
-}
+  margin: 15px 0px 10px 0px; }
+
 #segundoFila {
   display: flex;
   flex-direction: row;
   height: 350px;
-  margin: 15px 0px 10px 0px;
-}
+  margin: 15px 0px 10px 0px; }
 
 #slider {
   grid-area: slider;
-  background-color: black;
-}
+  background-color: black; }
+
 #slider img {
-  height: 400px;
-}
+  height: 400px; }
+
 #otros {
-  grid-area: otros;
-}
+  grid-area: otros; }
+
 .bBlack {
-  text-shadow: 15px;
-}
+  text-shadow: 15px; }
 
 .tabla1 {
-  width: 80%;
-}
+  width: 80%; }
+
 .tabla1 thead {
-  text-align: center;
-}
+  text-align: center; }
+
 .tabla1 thead td {
-  border: 2px solid orange;
-}
+  border: 2px solid orange; }
+
 .tabla1 tbody {
-  text-align: left;
-}
+  text-align: left; }
+
 .tabla1 tbody tr td {
-  border: 2px solid orange;
-}
+  border: 2px solid orange; }
+
 .tabla1 td img {
   width: 120px;
-  height: 100px;
-}
+  height: 100px; }
+
 /*FIN SECCION INDEX*/
 /*---------------------*/
 /*COMIENZO SECCION CARRO*/
 #grid-carro {
   display: grid;
-  grid-template-areas:
-    "header header header"
-    "contCarro contCarro total"
-    "tablaCarro tablaCarro tablaCarro"
-    "footer footer footer";
+  grid-template-areas: "header header header" "contCarro contCarro total" "tablaCarro tablaCarro tablaCarro" "footer footer footer";
   grid-template-columns: 20% auto 25%;
   grid-template-rows: 60px 40px 460px 60px;
   grid-row-gap: 2px;
-  grid-column-gap: 5px;
-}
+  grid-column-gap: 5px; }
 
 section#contCarro {
   grid-area: contCarro;
@@ -212,54 +194,52 @@ section#contCarro {
   margin-left: 30px;
   margin-bottom: 10px;
   font-size: 20px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-weight: bold;
-  height: 40px;
-}
+  height: 40px; }
+
 #contCarro hr {
-  border: 1px solid rgb(238, 174, 54);
-  width: 700px;
-}
+  border: 1px solid #eeae36;
+  width: 700px; }
+
 section#tablaCarro {
   grid-area: tablaCarro;
   display: flex;
-  flex-direction: column;
-}
+  flex-direction: column; }
+
 #tablaCarro hr {
-  border: 1px solid rgb(238, 174, 54);
+  border: 1px solid #eeae36;
   width: 700px;
-  margin-left: 30px;
-}
+  margin-left: 30px; }
+
 #tablaCarro article {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 5px 0px 5px 30px;
-}
+  margin: 5px 0px 5px 30px; }
+
 #tablaCarro article div {
   border: 2px solid orange;
   width: 140px;
   height: 20px;
   text-align: center;
-  background-color: rgb(252, 197, 95);
+  background-color: #fcc55f;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-weight: 600;
-}
+  font-weight: 600; }
+
 #tablaCarro article img {
   border: 2px solid orange;
   width: 140px;
-  height: 110px;
-}
+  height: 110px; }
+
 #tablaCarro div {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-}
+  align-items: flex-start; }
+
 #tablaCarro div span {
   margin-left: 10px;
-  margin-top: 5px;
-}
+  margin-top: 5px; }
 
 section#total {
   grid-area: total;
@@ -271,76 +251,68 @@ section#total {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(252, 190, 74);
-  border: 2px solid rgb(182, 119, 3);
+  background-color: #fcbe4a;
+  border: 2px solid #b67703;
   margin-top: 40px;
-  margin-right: 5px;
-}
+  margin-right: 5px; }
+
 #total div {
   width: 200px;
   text-align: center;
-  margin-top: 15px;
-}
+  margin-top: 15px; }
+
 #total div span {
   font-family: "Times New Roman", Times, serif;
   font-weight: 500;
-  margin-left: 4px;
-}
+  margin-left: 4px; }
 
 #total div a {
   text-decoration: none;
   border: 1px solid grey;
   border-radius: 2px;
-  background-color: rgb(190, 190, 190);
-  padding: 5px;
-}
+  background-color: #bebebe;
+  padding: 5px; }
 
 /* FIN SECCION CARRO*/
 /*---------------------*/
 /*COMIENZO SECCION CONTACTO*/
 #grid-contacto {
   display: grid;
-  grid-template-areas:
-    "header header header header"
-    "title title title title"
-    "titleForm titleForm form2 form2 "
-    "mapsDir mapsDir mapSite mapSite"
-    "footer footer footer footer";
+  grid-template-areas: "header header header header" "title title title title" "titleForm titleForm form2 form2 " "mapsDir mapsDir mapSite mapSite" "footer footer footer footer";
   grid-template-columns: 20% auto auto 20%;
   grid-template-rows: 60px 90px 350px 350px 60px;
   grid-row-gap: 2px;
   grid-column-gap: 5px;
-  background: linear-gradient(to bottom, rgb(253, 196, 89), rgb(255, 239, 209));
-}
+  background: linear-gradient(to bottom, #fdc459, #ffefd1); }
+
 #gMapsSite {
   grid-area: mapSite;
   text-align: center;
   width: 480px;
   height: 260px;
-  margin-right: 20px;
-}
+  margin-right: 20px; }
+
 #gMapsSite div {
   border: 2px solid rgba(61, 61, 61, 0.8);
-  border-radius: 3px;
-}
+  border-radius: 3px; }
+
 #gMapsDir {
   grid-area: mapsDir;
   margin-left: 30%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-}
+  align-items: flex-start; }
+
 #gMapsDir h2 {
   font-size: 32px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin-bottom: 5px; }
 
-  margin-bottom: 5px;
-}
 #gMapsDir h4 {
   font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-bottom: 5px;
-}
+  margin-bottom: 5px; }
+
 #title {
   grid-area: title;
   text-align: center;
@@ -348,152 +320,138 @@ section#total {
   padding-bottom: 30px;
   font-size: 24px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  margin-bottom: 30px;
-}
+  margin-bottom: 30px; }
+
 #titleForm {
   grid-area: titleForm;
   text-align: center;
-  margin-left: 300px;
-}
+  margin-left: 300px; }
+
 #formulario {
   grid-area: form2;
   text-align: left;
   margin-right: 50px;
-  margin-bottom: 40px;
-}
+  margin-bottom: 40px; }
+
 #nombre {
   width: 300px;
-  height: 20px;
-}
+  height: 20px; }
+
 #apellido {
   width: 300px;
-  height: 20px;
-}
+  height: 20px; }
+
 #empresa {
   width: 300px;
-  height: 20px;
-}
+  height: 20px; }
+
 #mensaje {
   width: 300px;
-  height: 80px;
-}
+  height: 80px; }
+
 /*FIN SECCION CONTACTO*/
 /*---------------------*/
 /*COMIENZO SECCION MI CUENTA*/
 #grid-miCuenta {
   display: grid;
-  grid-template-areas:
-    "header header header"
-    "misDatos misDatos misDatos"
-    "footer footer footer";
+  grid-template-areas: "header header header" "misDatos misDatos misDatos" "footer footer footer";
   grid-template-columns: 20% auto 20%;
   grid-template-rows: 60px 800px 50px;
   grid-row-gap: 2px;
-  grid-column-gap: 5px;
-}
+  grid-column-gap: 5px; }
+
 section#misDatos {
   grid-area: misDatos;
-  justify-items: stretch;
-}
+  justify-items: stretch; }
+
 #misDatos div {
-  margin: 10px;
-}
+  margin: 10px; }
+
 #misDatos h3 {
   margin: 10px 420px 5px 0px;
-  font-size: 24px;
-}
+  font-size: 24px; }
+
 #misDatos h4 {
   margin: 15px;
-  font-size: 20px;
-}
+  font-size: 20px; }
+
 #misDatos div div a {
   margin-bottom: 20px;
   text-decoration: none;
   border: 1px solid grey;
   border-radius: 2px;
-  background-color: rgb(190, 190, 190);
-  padding: 5px;
-}
+  background-color: #bebebe;
+  padding: 5px; }
+
 .datos {
   border: 2px solid black;
   width: 500px;
   height: 25px;
-  background-color: rgb(247, 247, 247);
-}
+  background-color: #f7f7f7; }
+
 .form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
-}
+  margin-bottom: 20px; }
+
 .btnCancelar {
   margin-right: 445px;
   padding: 10px;
   width: 60px;
-  height: 30px;
-}
+  height: 30px; }
+
 /*FIN SECCION MI CUENTA*/
 /*---------------------*/
 /*COMIENZO SECCION REGISTRARSE*/
 #grid-registrarse {
   display: grid;
-  grid-template-areas:
-    "header header header"
-    "regi regi regi"
-    "separador separador separador"
-    "formu formu formu"
-    "footer footer footer";
+  grid-template-areas: "header header header" "regi regi regi" "separador separador separador" "formu formu formu" "footer footer footer";
   grid-template-columns: 20% auto 20%;
   grid-template-rows: 60px auto auto auto 60px;
   grid-row-gap: 2px;
-  grid-column-gap: 5px;
-}
+  grid-column-gap: 5px; }
+
 section#regi {
   grid-area: regi;
   text-align: center;
   height: 200px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
+  align-items: center; }
+
 #regi h2 {
-  font-size: 32px;
-}
+  font-size: 32px; }
+
 #regi h2:hover {
-  transform: skewX(15deg);
-}
+  transform: skewX(15deg); }
+
 #regi div {
   border: 0.5px solid black;
   width: 100px;
   height: 130px;
   margin: 10px;
   padding-top: 10px;
-  border-radius: 3px;
-}
+  border-radius: 3px; }
+
 #regi div a {
   text-decoration: none;
   color: black;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-}
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
+
 #regi div:hover {
-  transform: scale(1.3, 1.3);
-}
+  transform: scale(1.3, 1.3); }
+
 #facebook {
-  background: linear-gradient(to bottom, rgb(87, 87, 250), rgb(173, 173, 255));
-}
+  background: linear-gradient(to bottom, #5757fa, #adadff); }
+
 #google {
-  background: linear-gradient(
-    to bottom,
-    rgb(252, 154, 109),
-    rgb(252, 237, 109),
-    rgb(105, 237, 105)
-  );
-}
+  background: linear-gradient(to bottom, #fc9a6d, #fced6d, #69ed69); }
+
 section#separador {
   grid-area: separador;
   text-align: center;
-  padding: 20px;
-}
+  padding: 20px; }
 
 section#formu {
   grid-area: formu;
@@ -502,59 +460,24 @@ section#formu {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
+  align-items: center; }
+
 #formu article div input {
   height: 18px;
-  width: 200px;
-}
+  width: 200px; }
+
 .palabra {
   text-align: left;
-  font-weight: bold;
-}
+  font-weight: bold; }
+
 #btn-regi {
   margin-top: 15px;
-  border: 2px solid black;
-}
+  border: 2px solid black; }
+
 #btn-regi:hover {
-  transform: translate(10px, 0px);
-}
+  transform: translate(10px, 0px); }
+
 /*FIN SECCION MI REGISTRARSE*/
-/*--------------------------*/
-/*COMIENZO REGISTRARSE2*/
-
-.btn-facebook {
-  background-color: rgb(64, 93, 157);
-  color: white;
-}
-.btn-twitter {
-  background-color: rgb(66, 174, 236);
-  color: white;
-}
-.divider-text {
-  position: relative;
-  text-align: center;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-.divider-text span {
-  padding: 7px;
-  font-size: 12px;
-  position: relative;   
-  z-index: 2;
-}
-.divider-text:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  border-bottom: 1px solid #ddd;
-  top: 55%;
-  left: 0;
-  z-index: 1;
-}
-
-/*FIN REGISTRARSE2*/
-
 /*COMIENZO MEDIA QUERIES*/
 /*
 @media only screen and (max-width: 768px) {
